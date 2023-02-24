@@ -6,8 +6,6 @@ let greekText = "Θέλεις να μάθεις ένα μυστικό ?";
 
 introText.addEventListener("mouseover", englishVersion);
 
-let delay = setTimeout(englishVersion, 9000)
-
 function englishVersion() {
     introText.textContent = "";
     introText.textContent += englishText;
