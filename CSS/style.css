@@ -1,0 +1,52 @@
+:root {
+    --color-green: #a8e5ba;
+    --color-blue: #2b44ff;
+}
+
+/* my css propriet*/
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: var(--color-green);
+}
+
+/* body section */
+
+body {
+    font-family: 'Charm';
+    background: rgb(178,127,203);
+    background: radial-gradient(circle, rgba(178,127,203,1) 0%, rgba(120,138,235,1) 100%);
+}
+
+#main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.intro {
+    width: 75%;
+    height: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_avatar {
+    object-fit: contain;
+}
+.intro_text
+{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* 
+A faire 
+
+- Make fumes
+*/
+
