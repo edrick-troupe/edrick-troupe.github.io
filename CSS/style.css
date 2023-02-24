@@ -41,7 +41,26 @@ body {
     font-size: 4rem;
     display: flex;
     align-items: center;
+    animation: floating 7.5s ease-in-out infinite;
 }
+@keyframes floating {
+    0% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+.intro_text:hover {
+    animation-play-state: paused;
+}
+
+
+
 
 
 /* 
