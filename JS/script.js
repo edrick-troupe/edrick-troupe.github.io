@@ -1,19 +1,21 @@
 // Text transformation
 
-const introText = document.querySelector(".intro_text");
-let englishText = '<a href="https://github.com/edrick-troupe">You wanna know a secret ?</a>'
-let greekText = '<a href="https://github.com/edrick-troupe">Θέλεις να μάθεις ένα μυστικό ?</a>'
+const introText = document.querySelector(".intro_link");
+let englishText = "You wanna know a secret ?";
+let greekText = "Θέλεις να μάθεις ένα μυστικό ?";
 
 introText.addEventListener("mouseover", englishVersion);
 
+let delay = setTimeout(englishVersion, 9000)
+
 function englishVersion() {
-    introText.innerHTML = "";
-    introText.innerHTML += englishText;
+    introText.textContent = "";
+    introText.textContent += englishText;
 }
 
 introText.addEventListener("mouseout", greekVersion);
 
 function greekVersion() {
-    introText.innerHTML = "";
-    introText.innerHTML += greekText;
+    introText.textContent = "";
+    introText.textContent += greekText;
 }
