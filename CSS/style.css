@@ -6,6 +6,7 @@
 /* my css propriet*/
 a {
     text-decoration: none;
+    text-shadow: 1px 1px 2px var(--color-blue);
 }
 a:visited {
     color: var(--color-green);
@@ -17,6 +18,8 @@ body {
     font-family: 'Charm';
     background: rgb(178,127,203);
     background: radial-gradient(circle, rgba(178,127,203,1) 0%, rgba(120,138,235,1) 100%);
+    overflow: hidden;
+
 }
 
 #main-container {
@@ -31,6 +34,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .intro_avatar {
@@ -59,13 +63,74 @@ body {
     animation-play-state: paused;
 }
 
+.space {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.planet {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+@keyframes spiningIn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
+.jupiter {
+    transform: translate(-300%, -50%);
+    animation: spining1 12s linear infinite -9s;
+}
+@keyframes spining1 {
+    from {
+        transform: rotate(0deg) translateX(-300%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-300%);
+    }
+}
 
+.mars {
+    transform: translate(-150%, -50%);
+    animation: spining2 12s linear infinite -6s;
+}
+@keyframes spining2 {
+    from {
+        transform: rotate(0deg) translateX(-150%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-150%);
+    }
+}
 
+.moon {
+    transform: translate(150%, -50%);
+    animation: spining3 18s linear infinite -9s;
+}
+@keyframes spining3 {
+    from {
+        transform: rotate(0deg) translateX(150%);
+    }
+    to {
+        transform: rotate(360deg) translateX(150%);
+    }
+}
 
-/* 
-A faire 
-
-- Make fumes
-*/
-
+.saturn {
+    transform: translate(300%, -50%);
+    animation: spining4 12s linear infinite -9s;
+}
+@keyframes spining4 {
+    from {
+        transform: rotate(0deg) translateX(300%);
+    }
+    to {
+        transform: rotate(360deg) translateX(300%);
+    }
+}
