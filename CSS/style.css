@@ -74,63 +74,85 @@ body {
     top: 50%;
     left: 50%;
 }
-@keyframes spiningIn {
+
+.jupiter {
+    transform: translate(-300%, -50%);
+    animation: spin-around-jupiter 12s linear infinite -9s;
+}
+.jupiter img {
+    width: 50%;
+    animation: spin-inner 6s linear infinite;
+}
+
+.mars {
+    transform: translate(-150%, -50%);
+    animation: spin-around-mars 15s linear infinite -6s;
+}
+.mars img {
+    width: 50%;
+    animation: spin-inner 6s linear infinite;
+}
+
+.moon {
+    transform: translate(150%, -50%);
+    animation: spin-around-moon 18s linear infinite -3s;
+}
+.moon img {
+    width: 50%;
+    animation: spin-inner 9s linear infinite;
+}
+
+.saturn {
+    transform: translate(300%, -50%);
+    animation: spin-around-saturn 12s linear infinite -12s;
+}
+.saturn img {
+    width: 50%;
+    animation: spin-inner 3s linear infinite;
+}
+
+
+@keyframes spin-around-jupiter {
+    from {
+        transform: rotate(0deg) translateX(-225%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-225%);
+    }
+}
+
+@keyframes spin-around-mars {
+    from {
+        transform: rotate(0deg) translateX(-200%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-200%);
+    }
+}
+
+@keyframes spin-around-moon {
+    from {
+        transform: rotate(0deg) translateX(-100%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-100%);
+    }
+}
+
+@keyframes spin-around-saturn {
+    from {
+        transform: rotate(0deg) translateX(-350%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-350%);
+    }
+}
+
+@keyframes spin-inner {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-.jupiter {
-    transform: translate(-300%, -50%);
-    animation: spining1 12s linear infinite -9s;
-}
-@keyframes spining1 {
-    from {
-        transform: rotate(0deg) translateX(-300%);
-    }
-    to {
-        transform: rotate(360deg) translateX(-300%);
-    }
-}
-
-.mars {
-    transform: translate(-150%, -50%);
-    animation: spining2 12s linear infinite -6s;
-}
-@keyframes spining2 {
-    from {
-        transform: rotate(0deg) translateX(-150%);
-    }
-    to {
-        transform: rotate(360deg) translateX(-150%);
-    }
-}
-
-.moon {
-    transform: translate(150%, -50%);
-    animation: spining3 18s linear infinite -9s;
-}
-@keyframes spining3 {
-    from {
-        transform: rotate(0deg) translateX(150%);
-    }
-    to {
-        transform: rotate(360deg) translateX(150%);
-    }
-}
-
-.saturn {
-    transform: translate(300%, -50%);
-    animation: spining4 12s linear infinite -9s;
-}
-@keyframes spining4 {
-    from {
-        transform: rotate(0deg) translateX(300%);
-    }
-    to {
-        transform: rotate(360deg) translateX(300%);
     }
 }
