@@ -75,71 +75,84 @@ body {
     left: 50%;
 }
 
-.jupiter {
-    transform: translate(-300%, -50%);
-    animation: spin-around-jupiter 12s linear infinite -9s;
+.moon {
+    animation: spin-around-moon 9s linear infinite -3s;
 }
-.jupiter img {
-    width: 50%;
-    animation: spin-inner 6s linear infinite;
+.moon img {
+    width: 30%;
+    animation: spin-inner 3s linear infinite;
 }
 
 .mars {
-    transform: translate(-150%, -50%);
-    animation: spin-around-mars 15s linear infinite -6s;
+    animation: spin-around-mars 12s linear infinite -6s;
 }
 .mars img {
-    width: 50%;
+    width: 40%;
     animation: spin-inner 6s linear infinite;
 }
 
-.moon {
-    transform: translate(150%, -50%);
-    animation: spin-around-moon 18s linear infinite -3s;
+.uranus {
+    animation: spin-around-uranus 15s linear infinite -12s;
 }
-.moon img {
-    width: 50%;
+.uranus img {
+    width: 70%;
     animation: spin-inner 9s linear infinite;
 }
 
 .saturn {
-    transform: translate(300%, -50%);
-    animation: spin-around-saturn 12s linear infinite -12s;
+    animation: spin-around-saturn 18s linear infinite -3s;
 }
 .saturn img {
-    width: 50%;
-    animation: spin-inner 3s linear infinite;
+    width: 75%;
+    animation: spin-inner 9s linear infinite;
+}
+
+.jupiter {
+    animation: spin-around-jupiter 21s linear infinite;
+}
+.jupiter img {
+    width: 75%;
+    animation: spin-inner 12s linear infinite;
 }
 
 
-@keyframes spin-around-jupiter {
+@keyframes spin-around-moon {
     from {
-        transform: rotate(0deg) translateX(-225%);
+        transform: rotate(0deg) translateX(-75%);
     }
     to {
-        transform: rotate(360deg) translateX(-225%);
+        transform: rotate(360deg) translateX(-75%);
     }
 }
 
 @keyframes spin-around-mars {
     from {
-        transform: rotate(0deg) translateX(-200%);
+        transform: rotate(0deg) translateX(-125%);
     }
     to {
-        transform: rotate(360deg) translateX(-200%);
+        transform: rotate(360deg) translateX(-125%);
     }
 }
 
-@keyframes spin-around-moon {
+@keyframes spin-around-uranus {
     from {
-        transform: rotate(0deg) translateX(-100%);
+        transform: rotate(0deg) translateX(-150%);
     }
     to {
-        transform: rotate(360deg) translateX(-100%);
+        transform: rotate(360deg) translateX(-150%);
     }
 }
 
 @keyframes spin-around-saturn {
+    from {
+        transform: rotate(0deg) translateX(-250%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-250%);
+    }
+}
+
+@keyframes spin-around-jupiter {
     from {
         transform: rotate(0deg) translateX(-350%);
     }
@@ -147,6 +160,7 @@ body {
         transform: rotate(360deg) translateX(-350%);
     }
 }
+
 
 @keyframes spin-inner {
     from {
